@@ -1,21 +1,130 @@
 *{
   padding: 0px;
   margin: 0px;
+  
   list-style: none;
+  text-decoration: none; 
+}
+body{
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  min-height: 100vh;
 }
 .page{
   width: 1000px;
-  margin: 65px auto 0;
+  margin: 0 auto 0;
+  padding-top: 65px;
 }
 
-header{
+nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   margin-bottom: 58px;
 }
 
 ul{
   display: flex;
   gap: 48px;
+  padding: 0 21px;
+}
+
+nav ul li a{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1F1534; 
+  opacity: 50%;
+
+  transition: 0.5s;
+}
+nav ul li a:hover{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  opacity: 100%;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text h1{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534; 
+  
+  width: 431px;
+  margin-bottom: 40px;
+}
+.text h1 strong{
+  font-weight: 700;
+  color: #89C5CC;
+}
+
+.text p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  
+  margin-bottom: 40px;
+  width: 380px;
+}
+.text button{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #F9F9F9;
+  
+  background-color: #69B99D;
+  border: 0;
+  padding: 14px 32px 15px 32px;
+  border-radius: 4px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 10px;
+
+  cursor: pointer;
+
+  transition: 0.8s;
+}
+.text button:hover{
+  background: #518d79;
+}
+
+footer{
+  text-align: center;
+  margin-top: 80px;
+}
+footer p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #1F1534; 
+}
+footer p a{
+  font-weight: 700;
+  color: #1F1534;
+  transition: 0.6s;
+}
+footer p a:hover{
+  color: #5a3f96;
+}
+
+#balls{
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
